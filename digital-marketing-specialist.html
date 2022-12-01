@@ -5503,6 +5503,26 @@
         pointer-events: none;
       }
 
+      body {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-animation: fade ease 1.75s;
+        -moz-animation: fade ease 1.75s;
+        -ms-animation: fade ease 1.75s;
+        -o-animation: fade ease 1.75s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
       :root {
         --color_0: 255, 255, 255;
         --color_27: 74, 25, 172;
